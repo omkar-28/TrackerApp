@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tracker App</title>
+
+    <link rel="stylesheet" href="custom.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Your Balance</h1>
+        <p id="balance">$0</p>
+        <div class="tracker">
+            <div class="income">
+                <h3>Income</h3>
+                <p id="income" class="money">+$0.00</p>
+            </div>
+            <div class="expense">
+                <h3>Expense</h3>
+                <p id="expense" class="money">-$0.00</p>
+            </div>
+        </div>
+
+        <div class="history">
+            <h4>History</h4>
+            <ul id="transList" class="list">
+                
+            </ul>
+        </div>
+
+        <div class="addEntries">
+            <h3>Add new transaction</h3>
+            <form action="" id="formExp">
+                <div class="form-control">
+                    <label for="text">Add Text</label>
+                    <input type="text" value="" name="text" id="text">
+                </div>
+                <div class="form-control">
+                    <label for="amount">Add Amount</label>
+                    <input type="number" value="" name="amount" id="amount">
+                </div>
+                <button class="btnSubmit">Add</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
