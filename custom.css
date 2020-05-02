@@ -34,7 +34,12 @@ body {
   font-weight: bold;
   margin: 0 0 20px;
 }
- h1 {
+h1 {
+    font-size: 28px;
+    text-transform: uppercase;
+    margin: 20px 0 0;
+}
+ h2 {
   font-size: 16px;
   margin: 0;
   opacity: 0.5;
@@ -75,7 +80,7 @@ h4 {
 
     font-size: 16px;
     /*! opacity: 0.5; */
-    margin: 30px 0 15px;
+    margin: 30px 0 25px;
 
 }
 .list {
@@ -84,33 +89,48 @@ h4 {
 }
 .list li {
     list-style: none;
-    margin: 0 0 10px;
+    margin: 0 0 15px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px;
+    box-shadow: 0px 5px 10px 0 rgba(35,38,43,0.03);
+    border-radius: 4px;
+    font-weight: bold;
+    transition: .2s;
+}
+.list li:hover {
+    box-shadow: 0px 5px 10px 0 rgba(35,38,43,0.08);
 }
 .plus {
-    /*! border-left: 5px solid #2ecc71; */
+    color: #2ecc71;
 }
 .minus {
-    /*! border-left: 5px solid #c0392b; */
+    color: #c0392b;
 }
 .delete-btn {
     border: none;
-    background-color: red;
+    color: #c3161c;
     float: right;
-    line-height: 0;
-    color: #fff;
+    background: none;
     font-weight: bold;
-    width: 20px;
-    height: 20px;
-    padding: 0px;
-    margin-left: 10px;
+    margin-left: 6px;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 6px;
+    font-size: 16px;
+    line-height: 14px;
+    transition: 0.2s;
+    opacity: 0;
+    display: none;
 }
-h3 {
-    /*! opacity: 0.5; */
+.list li:hover .delete-btn{
+    display: flex;
+    opacity: 1;
+}
+.addEntries h3 {
+    margin: 40px 0 15px;
 }
 form {
     text-align: center;
@@ -123,6 +143,11 @@ input[type="text"], input[type="number"] {
     border-radius: 5px;
     width: 100%;
     -moz-appearance: textfield;
+    transition: .2s;
+}
+input:focus {
+    border: 2px solid rgb(2,104,250);
+    box-shadow: 0 0px 3px 0px rgba(2, 104, 250, 0.5);
 }
 label {
     font-size: 14px;
