@@ -35,11 +35,24 @@
             <form action="" id="formExp">
                 <div class="form-control">
                     <label for="text">Add Text</label>
-                    <input type="text" value="" name="text" id="text">
+                    <input type="text" value="" name="text" id="text" >
+                    <small>Error</small>
                 </div>
-                <div class="form-control">
-                    <label for="amount">Add Amount</label>
-                    <input type="number" value="" name="amount" id="amount">
+                <div class="form-stack">
+                    <div class="form-control">
+                        <label for="amountType">Select Type</label>
+                        <select id="amountType">
+                            <option value="type">Type</option>
+                            <option value="+" rel="icon-temperature">Income</option>
+                            <option value="-">Expense</option>
+                        </select> 
+                        <small>Error</small>
+                    </div>
+                    <div class="form-control">
+                        <label for="amount">Add Amount</label>
+                        <input type="number" value="" name="amount" id="amount">
+                        <small>Error</small>
+                    </div>
                 </div>
                 <button class="btnSubmit">Add</button>
             </form>
